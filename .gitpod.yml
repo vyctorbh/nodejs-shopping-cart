@@ -1,22 +1,20 @@
 image: node:12.13.0-alpine
-tasks:
-  - init: npm install
-  - command: export  PORT=8080
-  - command: export  DB_HOST="donit.cvpoplji7opi.us-east-1.rds.amazonaws.com"
-  - command: export  DB_PORT=3306
-  - command: export  DB_USERNAME="admin"
-  - command: export  DB_PASSWORD="G8uVzq73kxbtNUci"
-  - command: export  DB_DATABASE="innodb"
-  - command: export  DB_TABLE_PREFIX="staart-"
-  - command: export  SES_REGION="us-east-1"
-  - command: export  SES_ACCESS="AKIAJ23TTVCAU52JQUSQ"
-  - command: export  SES_SECRET="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"
-  - command: export  DB_TYPE="mongodb"
-  - command: export  DB_MONGODB_CONNECTION_URL="mongodb://167.71.151.43:27017/donitdev"
-  - command: export  N8N_ENCRYPTION_KEY="ososls2292020222"
-  - command: export  REDIS_URL="redis://redis-12394.c52.us-east-1-4.ec2.cloud.redislabs.com:12394"
-  - command: export  REDIS_AUTH="58wfcTFAN4bkK4QqtOk88NY83o8ulWoM"
 ports:
 - port: 3000
 tasks:
 - init: npm install
+- command: export  PORT=8080
+- command: export  DB_HOST="donit.cvpoplji7opi.us-east-1.rds.amazonaws.com"
+- command: export  DB_PORT=3306
+- command: export  DB_USERNAME="admin"
+- command: export  DB_PASSWORD="G8uVzq73kxbtNUci"
+- command: export  DB_DATABASE="innodb"
+- command: export  DB_TABLE_PREFIX="staart-"
+- command: export  SES_REGION="us-east-1"
+- command: export  SES_ACCESS="AKIAJ23TTVCAU52JQUSQ"
+- command: export  SES_SECRET="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"
+- command: export  DB_TYPE="mongodb"
+- command: export  DB_MONGODB_CONNECTION_URL="mongodb://167.71.151.43:27017/donitdev"
+- command: export  N8N_ENCRYPTION_KEY="ososls2292020222"
+- command: export  REDIS_URL="redis://redis-12394.c52.us-east-1-4.ec2.cloud.redislabs.com:12394"
+- command: export  REDIS_AUTH="58wfcTFAN4bkK4QqtOk88NY83o8ulWoM"
